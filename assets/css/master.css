@@ -1,0 +1,392 @@
+*, *::after, *::before, p {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+
+  font-family: 'Raleway', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+
+  padding: 30px 0;
+
+  text-transform: uppercase;
+
+  border-bottom: 2px solid #505369;
+}
+
+.navbar {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.7;
+
+  margin-left: 50px;
+
+  transition: opacity 0.3s;
+}
+
+.navbar__link:hover {
+  opacity: 1;
+
+}
+
+.navbar__link:first-child{
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  background: url(/assets/img/header-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.header-content {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 950px;
+  height: 80%;
+
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-content h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.header-content p {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 40px 0 70px 0;
+  opacity: 0.7;
+
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #e84545;
+  padding: 20px 45px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 2.3px;
+
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: #e72d2d;
+}
+
+.futures {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 30px 0 80px 0;
+}
+
+.futures__block {
+  width: 30%;
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.futures__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  margin-top: 30px;
+}
+
+.futures__description {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-top: 30px;
+
+  color: #6c7279;
+}
+
+.pictures {
+  width: 100%;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.pictures__block {
+  position: relative;
+  margin-top: 3px;
+
+  height: 35vh;
+  width: 24.5vw;
+}
+
+.pictures__block_overlay {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(231, 80, 80, 0.8);
+
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+
+  z-index: 1000;
+  opacity: 0;
+
+  transition: opacity linear 0.4s;
+}
+
+.pictures__block_overlay h1 {
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.pictures__block_overlay p {
+  font-weight: 400;
+
+}
+
+.pictures__block img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.pictures__block_overlay:hover {
+ opacity: 1;
+ cursor: pointer;
+}
+
+.team {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 100px 0;
+}
+
+.team__member {
+  width: 205px;
+}
+
+.team__member_photo {
+  image-orientation: cover;
+  height: 205px;
+  width: 205px;
+}
+
+.team__member h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+
+  margin-top: 30px;
+}
+
+.team__member_p1 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #e75050;
+
+  margin-top: 7px;
+}
+
+.team__member_p2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 30px;
+}
+
+.team__member_links {
+  width: 30px;
+  height: 30px;
+
+  margin-top: 30px;
+  margin-right: 10px;
+
+  border: 1.3px solid #e8ecee;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__member_links:hover {
+  cursor: pointer;
+  transition: linear 0.4s;
+  box-shadow: 0 2px 0 #e75050;
+}
+
+.podcast {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.podcast img {
+  width: 100%;
+}
+
+.podcast h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.podcast p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+}
+
+ .podcast a {
+   margin-top: 40px;
+   margin-bottom: 100px;
+ }
+
+footer {
+  background-color: #3a3e64;
+  text-align: center;
+  color: #fff;
+  height: 35vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.footer__blog {
+  width: 310px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer__blog h1 {
+  padding-bottom: 22px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer__blog p {
+  opacity: 0.5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.footer__contacts_div {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__contacts {
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.footer__contacts:hover {
+ background-color: #3a3e8e;
+}
+
+.footer_info {
+  background-color: #313454;
+  height: 10vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #808080;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_info span {
+  color: #fff;
+}
